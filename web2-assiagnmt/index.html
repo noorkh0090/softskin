@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftSkin - Natural Beauty Education</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/cil-globe.svg"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container pt-3">
+        <a class="navbar-brand" href="#">SoftSkin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto ms-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="navbar-icons d-flex align-items-center">
+            <a href="#"><i class="bi bi-cart"></i> Cart</a>
+            <a href="#"><i class="cil-globe"></i>EN</a>
+            <div class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                logged in as samer
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end mt-xxl-3">
+                <li>
+                  <a class="dropdown-item p-2 mx-auto" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2 mx-auto" href="#"
+                    >Another action</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p-2 mx-auto" href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Desktop Hero (Absolute Overlay) - Hidden on Mobile -->
+      <div class="hero-container d-none d-lg-block">
+        <img
+          src="assets/BANNER1.JPG"
+          alt="Natural ingredients"
+          class="hero-image"
+        />
+        <div class="hero-content">
+          <h1>Learn. Improve. Grow</h1>
+          <p>
+            Build your skills through job-ready programs and earn your
+            certification to propel your career.
+          </p>
+        </div>
+        <div class="hero-indicators position-absolute bottom-0 end-0 mb-4 me-5 d-flex gap-2">
+          <div class="hero-dot active" style="background-color: white"></div>
+          <div class="hero-dot" style="background-color: white"></div>
+          <div class="hero-dot" style="background-color: white"></div>
+        </div>
+      </div>
+
+      <!-- Mobile Hero (Stacked Layout) - Hidden on Desktop -->
+      <div class="hero-mobile d-lg-none">
+        <img
+          src="assets/BANNER1.JPG"
+          alt="Natural ingredients"
+          class="img-fluid w-100"
+        />
+        <div class="px-4 py-5 text-center" style="background-color: var(--light-bg);">
+          <h1 class="h2 mb-3">Learn. Improve. Grow</h1>
+          <p class="text-muted mb-4" style="font-size: 1.1rem;">
+            Build your skills through job-ready programs and earn your
+            certification to propel your career.
+          </p>
+          <div class="d-flex justify-content-center gap-2 mt-4">
+             <div class="hero-dot bg-secondary border border-white" style="width: 10px; height: 10px; border-radius: 50%;"></div>
+             <div class="hero-dot bg-secondary border border-white" style="width: 10px; height: 10px; border-radius: 50%;"></div>
+             <div class="hero-dot bg-secondary border border-white" style="width: 10px; height: 10px; border-radius: 50%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Catalog -->
+    <section class="course-catalog py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4">Explore our courses catalogue</h2>
+
+        <div class="search-bar d-flex justify-content-center mb-2">
+          <div class="input-group search-container mt-0 mb-0">
+            <input
+              type="text"
+              class="form-control border-0 mb-0"
+              placeholder="Search courses catalog"
+            />
+            <button class="btn border-0 bg-transparent text-secondary px-3">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <button class="category-btn btn-browse mt-3">Browse Courses</button>
+          <button class="category-btn btn-featured mt-3">
+            Featured Category
+          </button>
+          <button class="category-btn btn-recent mt-3">Recent Courses</button>
+        </div>
+      </div>
+    
+    <!-- Recent Courses -->
+    
+      <div class="container">
+        <div class="section-header d-flex align-items-center py-3 mt-5">
+          <div class="section-header-title flex-shrink-0">
+            <h3 class="section-title mb-0">Recent Courses</h3>
+          </div>
+          <div class="section-header-desc flex-grow-1 px-4">
+            <p class="text-muted mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula nunc in neque sollicitudin,
+              ac cursus tellus semper. Morbi posuere elit mollis erat gravida rhoncus.
+            </p>
+          </div>
+          <div class="section-header-btn flex-shrink-0">
+            <a href="#" class="view-all px-4 py-2">View all courses</a>
+          </div>
+        </div>
+        </section>
+
+        <!-- Courses Carousel -->
+         <section class="courses-Carousel">
+        <div class="courses-carousel position-relative">
+          <button class="carousel-arrow carousel-arrow-left" aria-label="Previous">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <div class="row g-4">
+            <!-- Course Card 1 -->
+            <div class="col-md-3">
+              <div class="course-card d-flex flex-column">
+                <div class="course-image-wrapper">
+                  <img
+                    src="assets/card(1).png"
+                    alt="Course"
+                    class="course-image"
+                  />
+                  <div class="course-badge">Free Subscription</div>
+                </div>
+                <div class="course-info">
+                  <div class="instructor">
+                    <img
+                      src="assets/success_story_icon1__.png"
+                      alt="Instructor"
+                    />
+                    <div class="instructor-details">
+                      <span class="instructor-label">Instructor</span>
+                      <span class="instructor-name">Dr. Harald Helfeger</span>
+                    </div>
+                  </div>
+                  <h4 class="course-title">
+                    Effective use and understanding of clinical ....
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="course-stats mb-2">
+                  </div>
+                  <button class="course-details-btn">
+                    Course details <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="col-md-3">
+              <div class="course-card d-flex flex-column">
+                <div class="course-image-wrapper">
+                  <img
+                    src="assets/card2.png"
+                    alt="Course"
+                    class="course-image"
+                  />
+                </div>
+                <div class="course-info">
+                  <div class="instructor">
+                    <img
+                      src="assets/success_story_icon1__.png"
+                      alt="Instructor"
+                    />
+                    <div class="instructor-details">
+                      <span class="instructor-label">Instructor</span>
+                      <span class="instructor-name">Dr. Harald Helfeger</span>
+                    </div>
+                  </div>
+                  <h4 class="course-title">
+                    Effective use and
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="course-stats mb-2">
+                    <span class="course-price-old">399$</span>
+                    <span class="course-price">299$</span>
+                  </div>
+                  <button class="course-details-btn">
+                    Course details <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="col-md-3">
+              <div class="course-card d-flex flex-column">
+                <div class="course-image-wrapper">
+                  <img
+                    src="assets/card3.png"
+                    alt="Course"
+                    class="course-image"
+                  />
+                </div>
+                <div class="course-info">
+                  <div class="instructor">
+                    <img
+                      src="assets/success_story_icon1__.png"
+                      alt="Instructor"
+                    />
+                    <div class="instructor-details">
+                      <span class="instructor-label">Instructor</span>
+                      <span class="instructor-name">Dr. Harald Helfeger</span>
+                    </div>
+                  </div>
+                  <h4 class="course-title">
+                    Effective use and understanding of clinical ....
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="course-stats mb-2">
+                    <span class="course-price">149$</span>
+                  </div>
+                  <button class="course-details-btn">
+                    Course details <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course Card 4 -->
+            <div class="col-md-3">
+              <div class="course-card d-flex flex-column">
+                <div class="course-image-wrapper">
+                  <img
+                    src="assets/card4.png"
+                    alt="Course"
+                    class="course-image"
+                  />
+                </div>
+                <div class="course-info">
+                  <div class="instructor">
+                    <img
+                      src="assets/success_story_icon1__.png"
+                      alt="Instructor"
+                    />
+                    <div class="instructor-details">
+                      <span class="instructor-label">Instructor</span>
+                      <span class="instructor-name">Dr. Harald Helfeger</span>
+                    </div>
+                  </div>
+                  <h4 class="course-title">
+                    Effective use and understanding of clinical ....
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="course-stats mb-2">
+                    <span class="course-price">149$</span>
+                  </div>
+                  <button class="course-details-btn">
+                    Course details <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Arrow -->
+          <button class="carousel-arrow carousel-arrow-right" aria-label="Next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beauty Products -->
+    <section class="beauty-products position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h2 class="mb-3 display-5">Beauty products <br>of your own!</h2>
+            <p class="text-muted pe-lg-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="product-features list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Pellentesque suscipit justo quis</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Curabitur ac odio lacus</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Nulla ligula metus, maximus</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="product-features list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> incididunt ut labore et</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Nulla ligula metus, maximus</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Nulla ligula metus, maximus</li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-end mt-4 pe-4">
+              <button class="read-more-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center">
+            <div class="stats-badge">
+              <img
+                src="assets/10years.png"
+                alt="10 years badge"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <ul class="stats-list list-unstyled ps-lg-5">
+              <li class="d-flex align-items-start mb-4">
+                <img src="assets/leaf.png" alt="leaf" class="me-3 mt-1" style="width: 24px; height: auto;">
+                <div>
+                  <strong class="d-block h4 mb-0 text-dark">2K</strong>
+                  <span class="text-muted">New products</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-4">
+                <img src="assets/leaf.png" alt="leaf" class="me-3 mt-1" style="width: 24px; height: auto;">
+                <div>
+                  <strong class="d-block h4 mb-0 text-dark">100K</strong>
+                  <span class="text-muted">Students</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-4">
+                <img src="assets/leaf.png" alt="leaf" class="me-3 mt-1" style="width: 24px; height: auto;">
+                <div>
+                  <strong class="d-block h4 mb-0 text-dark">10K</strong>
+                  <span class="text-muted">Students</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <div class="impressive-track">
+              <h3>Impressive track record</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories py-5">
+      <div class="container">
+        <h2 class="text-center text-secondary fw-light mb-5 display-5">Softina Success Stories</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+              <div class="flex-shrink-0 position-relative mb-3 mb-sm-0">
+                <img src="assets/success_story_icon1__.png" alt="Success story" class="rounded-circle shadow mx-auto" style="width: 180px; height: 180px; object-fit: cover; border: 4px solid white;">
+              </div>
+              <div class="flex-grow-1 ms-0 ms-sm-4">
+                <h4 class="mb-2 text-secondary fw-normal">Success Story Title</h4>
+                <p class="text-muted small mb-2 lh-base">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
+                  suspendisse ultrices gravida. Risus commodo viverra maecenas ac- accumsan lacus vel facilisis.
+                </p>
+                <div class="text-center text-sm-end">
+                  <a href="#" class="text-secondary text-decoration-underline small">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+              <div class="flex-shrink-0 position-relative mb-3 mb-sm-0">
+                <img src="assets/success_story_icon1__.png" alt="Success story" class="rounded-circle shadow mx-auto" style="width: 180px; height: 180px; object-fit: cover; border: 4px solid white;">
+              </div>
+              <div class="flex-grow-1 ms-0 ms-sm-4">
+                <h4 class="mb-2 text-secondary fw-normal">Success Story Title</h4>
+                <p class="text-muted small mb-2 lh-base">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
+                  suspendisse ultrices gravida. Risus commodo viverra maecenas ac- accumsan lacus vel facilisis.
+                </p>
+                <div class="text-center text-sm-end">
+                  <a href="#" class="text-secondary text-decoration-underline small">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Get in touch</h2>
+            <p class="contact-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="contact-info mt-4">
+              <h4>Address</h4>
+              <p>Musterstraße 12<br />München, 11229<br />Germany</p>
+
+              <h4>Phone</h4>
+              <p>030 123 4567<br />Fax: +49 742 4312</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email address"
+              />
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Comments"
+              ></textarea>
+              <button type="submit" class="submit-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section p-0">
+      <div class="container-fluid p-0">
+        <img src="assets/dot_media.png" alt="Partners" class="w-100 d-block" style="height: auto;">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 text-white" style="background-color: var(--primary-green);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-3" style="font-size: 0.9rem; font-weight: 600; color: #fff;">SOCIÉTÉ</h5>
+            <ul class="list-unstyled" style="line-height: 2;">
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Contact</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Presse</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Recrutements</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">English</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-3" style="font-size: 0.9rem; font-weight: 600; color: #fff;">Solutions</h5>
+            <ul class="list-unstyled" style="line-height: 2;">
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Plateformes d'apprentissage</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Fonctionnalités</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Mask</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-3" style="font-size: 0.9rem; font-weight: 600; color: #fff;">Offres</h5>
+            <ul class="list-unstyled" style="line-height: 2;">
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Académiques</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Organismes de formations</a></li>
+              <li><a href="#" class="text-white text-decoration-none small opacity-75">Entreprise</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 text-center text-md-end">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-end mb-4">
+                 <div class="text-end me-3 lh-1">
+                     <small class="d-block opacity-75" style="font-size: 0.7rem;">powered by</small>
+                     <strong style="font-size: 1.1rem;">trainerzone</strong>
+                     <small class="d-block opacity-75" style="font-size: 0.6rem; letter-spacing: 1px;">training platform</small>
+                 </div>
+                 <h4 class="mb-0 fw-light" style="font-size: 1.5rem;">Softína</h4>
+            </div>
+            <div class="social-icons">
+              <a href="#" class="text-white fs-5 mx-2 opacity-75"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-white fs-5 mx-2 opacity-75"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white fs-5 mx-2 opacity-75"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-white fs-5 mx-2 opacity-75"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-5 pt-4 opacity-75 small text-center text-md-start align-items-center border-top" style="border-color: rgba(255,255,255,0.2) !important;">
+           <div class="col-md-4 mb-2 mb-md-0">
+              Copyright © 2022
+           </div>
+           <div class="col-md-4 mb-2 mb-md-0 text-center">
+              All rights reserved. Worldwide.
+           </div>
+           <div class="col-md-4 text-center text-md-end">
+              <a href="#" class="text-white text-decoration-none">Contact us</a> | 
+              <a href="#" class="text-white text-decoration-none">Sitemap</a> | 
+              <a href="#" class="text-white text-decoration-none">Legal disclaimer</a>
+           </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
