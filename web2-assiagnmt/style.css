@@ -205,8 +205,8 @@
  .courses-Carousel {
      position: relative;
      z-index: 10;
-     padding: 2rem 50px; /* Space for arrows */
-     background-color: transparent; /* Allow beauty section to show behind */
+     padding: 2rem 50px; 
+     background-color: transparent; 
  }
 
  .courses-carousel {
@@ -220,7 +220,7 @@
      background: none;
      border: none;
      color: #ccc;
-     font-size: 3rem; /* Large arrow */
+     font-size: 3rem; 
      cursor: pointer;
      z-index: 10;
      padding: 0;
@@ -361,10 +361,6 @@
     color: white;
     border: none;
 }
-
-
- 
- 
  /* Beauty Products */
  .beauty-products {
      background-color: #fbfbe4;
@@ -543,9 +539,7 @@
      width: 30%;
      transition: all 0.3s ease;
  }
-
- 
- 
+  
  /* Footer */
  .footer {
      background-color: var(--primary-green);
